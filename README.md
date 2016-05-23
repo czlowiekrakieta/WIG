@@ -1,5 +1,5 @@
 # WIG
-crawler I created some time ago in order to extract fundamental data about Warsaw Stock Exchange - a lot of room for improvement, though. naive usage of Decision Trees returned accuracy of 99%, but I have yet to find a bug...
+crawler I created some time ago in order to extract fundamental data about Warsaw Stock Exchange - a lot of room for improvement, though. naive usage of Decision Trees returned accuracy of 99%, but I have yet to find what I missed...
 
 Notes to self:
 - bind all scripts to one single file
