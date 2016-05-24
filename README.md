@@ -1,7 +1,7 @@
 # WIG
 crawler I created some time ago in order to extract fundamental data about Warsaw Stock Exchange - a lot of room for improvement, though. naive usage of Random Forest returned accuracy of 99%, but I have yet to find what I missed...
 
-now that I look through scripts, there's huge mess down there. I am still learning, so I was coding very carefully, step by step, script by script, anxious not to screw everything up. Also, I have terrible Internet connection, prone to breaking for no apparent reason, so I was greedy to download everything I can and then, iteratively, polish my precious data.
+now that I look through scripts, there's huge mess down there. I am still learning, so I was coding very carefully, step by step, script by script, anxious not to screw everything up - sometimes at the cost of later readability. Also, I have terrible Internet connection, prone to breaking for no apparent reason, so I was greedy to download everything I can and then, iteratively, polish my precious data.
 
 Order of scripts:
 - parseraport.py contains script that extracts data from given url, crafted for formatting wyborcza.pl uses
