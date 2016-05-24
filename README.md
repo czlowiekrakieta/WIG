@@ -18,3 +18,4 @@ Notes to self:
 - do something about splits - find adjusted data or get rid of them on your own
 - translate scripts to english
 - there's a lot of missing data of stock movement, got to find better source of them
+- since bank have few additional features, ordinary script crashed when tried to parse data from pages pertaining to them. fix it and gather bank data. 
