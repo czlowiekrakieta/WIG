@@ -7,3 +7,4 @@ Notes to self:
 - make more features - every vector should contain something about company's past, relative change of every financial indicator at the very least
 - do something about splits - find adjusted data or get rid of them on your own
 - translate scripts to english
+- there's a lot of missing data of stock movement, got to find better source of them
