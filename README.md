@@ -9,6 +9,7 @@ Order of scripts:
 - konwersja.py turns stock movements data into CSV file
 - ekstrakcja.py truncates data - until now, every single file started from 1991 year, even if company wasn't founded yet, let alone listed on stock market
 - klasowanie.py calculates whether company outperformed or underperformed market in three months time from now
+- jedenplik_przeszlosc.py gathers all the fundamental data, along with their relative change to value observed three months earlier, in one single, 19k row csv file
 
 Notes to self:
 - bind all scripts to one single file
