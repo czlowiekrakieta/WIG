@@ -1,5 +1,36 @@
 # WIG
-crawler I created some time ago in order to extract fundamental data about Warsaw Stock Exchange - a lot of room for improvement, though. naive usage of Random Forest returned accuracy of 99%, but I have yet to find what I missed...
+ENGLISH VERSION BELOW
+
+POLSKI
+
+repozytorium to zawiera crawlera, którego zadaniem było grzebanie w plikach udostępnianych przez Gazetę Wyborczą i wyciągnięcie stamtąd cennych danych fundamentalnych dotyczących spółek giełdowych. jako twór nowicjusza zawiera ono sporo niedoróbek albo zwyczajnych błędów, których planuję się pozbyć
+
+im dłużej przyglądam się tym skryptom, tym większy bałagan tam znajduję. spowodowane jest to zapewne tym, że po pierwsze, pisząc to byłem ( i w zasadzie wciąż jestem ) nowicjuszem w dziedzine analizy danych, a po drugie, moje połączenie internetowe lubi się zrywać ot tak, bez powodu, zatem chciałem jak najszybciej mieć pliki na dysku, żeby móc nad nimi pracować.
+
+Kolejność skryptów:
+- parseraport.py wyciąga dane z zadanego adresu - jest napisany pod formatowanie użyte przez Gazetę Wyborczą
+- spolka.py używa wyżej wymienionego skryptu, aby skomasować dane do ramki danych z biblioteki pandas i umieścić je w pliku CSV, po jednym na każdą spółkę
+- konwersja.py umieszcza notowania archiwalne w plikach CSV
+- ekstrakcja.py skraca pliki CSV - spolka.py byla tak skonstruowana, że każdy plik CSV zaczynał się od roku 1991. był to oczywisty absurd, któremu trzeba było zaradzić
+- klasowanie.py sprawdza, czy po trzech miesiącach od dnia, którego dotyczą dane, spółka przebiła rynek, czy też nie
+- jedenplik_przeszlosc.py umieszcza dane, razem ze zmianą względem wartości zaobserwowanej trzy miesiące wcześniej, w jednym dużym pliku wielkości 19 tysięcy wierszy
+
+Notatki:
+- wrzucić wszystkie skrypty do jednego pliku
+- przeprowadzić bardziej zaawansowaną analizę eksploracyjną danych
+- stworzyć więcej własności*
+- zrobić coś z faktem, że ruchy akcji nie zawierają informacji o splitach
+- przetłumaczyć skrypty na angielski
+- brakuje sporo notowań, znaleźć dokładniejsze źródło
+- banki mają kilka dodatkowych własności dotyczących ich powiązań z Bankiem Centralnym. w związku z tym "spolka.py" wysypywała się, próbując zebrać ich dane do pliku. odłożyłem naprawienie tego problemu na później.
+
+*podstawowa analiza danych pokazała, że niestety histogramy własności niewiele się różnią dla spółek przebijających rynek i tych, którym się to zadanie nie powiodło. może trzeba pogrzebać wśród wskaźników znanych w świecie finansów i na tej podstawie stworzyć jakieś własności
+
+
+ENGLISH 
+
+
+crawler I created some time ago in order to extract fundamental data about Warsaw Stock Exchange - there's a lot of room for improvement, though. 
 
 now that I look through scripts, there's huge mess down there. I am still learning, so I was coding very carefully, step by step, script by script, anxious not to screw everything up - sometimes at the cost of later readability. Also, I have terrible Internet connection, prone to breaking for no apparent reason, so I was greedy to download everything I can and then, iteratively, polish my precious data.
 
@@ -14,8 +45,12 @@ Order of scripts:
 Notes to self:
 - bind all scripts to one single file
 - perform more sophisticated analysis of dataset
-- make more features - every vector should contain something about company's past, relative change of every financial indicator at the very least
+- create more features*
 - do something about splits - find adjusted data or get rid of them on your own
 - translate scripts to english
 - there's a lot of missing data of stock movement, got to find better source of them
-- since bank have few additional features, ordinary script crashed when tried to parse data from pages pertaining to them. fix it and gather bank data. 
+- since banks have few additional features, ordinary script crashed when tried to parse data from pages pertaining to them. fix it and gather bank data. 
+
+
+
+*basic exploratory analysis has shown that histograms of features from 0-class and 1-class aren't very different, which is very sad conclusion. maybe I got to delve more into company's past, or use indicator very well known in finance world
