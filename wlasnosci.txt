@@ -1,0 +1,21 @@
+Przychody netto ze sprzedaży produktów, towarów i materiałów
+Zysk (strata) z działalności operacyjnej
+Zysk (strata) brutto
+Zysk (strata) netto przypadający na akcjonariuszy jednostki dominującej
+Przepływy netto
+- z działalności operacyjnej
+- z działalności inwestycyjnej
+- z działalności finansowej
+Aktywa razem
+Zobowiązania i rezerwy na zobowiązania
+Zobowiązania długoterminowe
+Zobowiązania krótkoterminowe
+Kapitał własny przypadający akcjonariuszom jednostki dominującej
+Kapitał zakładowy
+Liczba akcji (tys. szt.)
+Wartość księgowa na jedną akcję (zł)
+Zysk (strata) na jedną akcję (zł)
+Porównywalna liczba akcji (tys. szt.)
+Porównywalna wartość księgowa na jedną akcję (zł)
+Porównywalny zysk (strata) na jedną akcję (zł)
+Zadeklarowana lub wypłacona dywidenda na jedną akcję (zł)
