@@ -14,6 +14,8 @@ Kolejność skryptów:
 - ekstrakcja.py skraca pliki CSV - spolka.py byla tak skonstruowana, że każdy plik CSV zaczynał się od roku 1991. był to oczywisty absurd, któremu trzeba było zaradzić
 - klasowanie.py sprawdza, czy po trzech miesiącach od dnia, którego dotyczą dane, spółka przebiła rynek, czy też nie
 - jedenplik_przeszlosc.py umieszcza dane, razem ze zmianą względem wartości zaobserwowanej trzy miesiące wcześniej, w jednym dużym pliku wielkości 19 tysięcy wierszy
+- wskazniki.py wyciaga dane fundamentalne i liczy wartości głównych wskaźników finansowych: C/Z, C/WK, zwrot na aktywach, zwrot na sprzedaży, wskaźnik ogólnego zadłużenia, zadłużenie długoterminowe, zwrot z kapitału własnego
+
 
 Notatki:
 - wrzucić wszystkie skrypty do jednego pliku
@@ -24,7 +26,7 @@ Notatki:
 - brakuje sporo notowań, znaleźć dokładniejsze źródło
 - banki mają kilka dodatkowych własności dotyczących ich powiązań z Bankiem Centralnym. w związku z tym "spolka.py" wysypywała się, próbując zebrać ich dane do pliku. odłożyłem naprawienie tego problemu na później.
 
-*podstawowa analiza danych pokazała, że niestety histogramy własności niewiele się różnią dla spółek przebijających rynek i tych, którym się to zadanie nie powiodło. może trzeba pogrzebać wśród wskaźników znanych w świecie finansów i na tej podstawie stworzyć jakieś własności
+*podstawowa analiza danych pokazała, że niestety histogramy własności niewiele się różnią dla spółek przebijających rynek i tych, którym się to zadanie nie powiodło. może trzeba pogrzebać wśród wskaźników znanych w świecie finansów i na tej podstawie stworzyć jakieś własności.
 
 
 ENGLISH 
