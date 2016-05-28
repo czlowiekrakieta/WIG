@@ -21,7 +21,6 @@ Notatki:
 - wrzucić wszystkie skrypty do jednego pliku
 - przeprowadzić bardziej zaawansowaną analizę eksploracyjną danych
 - stworzyć więcej własności*
-- zrobić coś z faktem, że ruchy akcji nie zawierają informacji o splitach
 - przetłumaczyć skrypty na angielski
 - brakuje sporo notowań, znaleźć dokładniejsze źródło
 - banki mają kilka dodatkowych własności dotyczących ich powiązań z Bankiem Centralnym. w związku z tym "spolka.py" wysypywała się, próbując zebrać ich dane do pliku. odłożyłem naprawienie tego problemu na później.
@@ -48,7 +47,6 @@ Notes to self:
 - bind all scripts to one single file
 - perform more sophisticated analysis of dataset
 - create more features*
-- do something about splits - find adjusted data or get rid of them on your own
 - translate scripts to english
 - there's a lot of missing data of stock movement, got to find better source of them
 - since banks have few additional features, ordinary script crashed when tried to parse data from pages pertaining to them. fix it and gather bank data. 
