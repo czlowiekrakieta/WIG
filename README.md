@@ -15,6 +15,9 @@ Kolejność skryptów:
 - klasowanie.py sprawdza, czy po trzech miesiącach od dnia, którego dotyczą dane, spółka przebiła rynek, czy też nie
 - jedenplik_przeszlosc.py umieszcza dane, razem ze zmianą względem wartości zaobserwowanej trzy miesiące wcześniej, w jednym dużym pliku wielkości 19 tysięcy wierszy
 - wskazniki.py wyciaga dane fundamentalne i liczy wartości głównych wskaźników finansowych: C/Z, C/WK, zwrot na aktywach, zwrot na sprzedaży, wskaźnik ogólnego zadłużenia, zadłużenie długoterminowe, zwrot z kapitału własnego
+- 6 miesiecy tworzy analogiczne pliki dla przebicia rynku za 6 miesięcy
+- zlaczenie tworzy pliki dla wartości w stosunku do branży, do której zalicza się spółkę oraz tworzy listę własności, które łącznie mają mniej niż 300 wartości pustych
+- RNN to sieć rekurencyjna użyta do treningu na podstawie zebranych danych. Maksymalna osiągnięta dokładność przewidywań to 65%
 
 
 Notatki:
